@@ -33,8 +33,6 @@ function App() {
         <Button>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, tempore dolore aliquid aspernatur natus eum ipsum sapiente autem. Beatae, molestiae deserunt. Omnis eligendi quos enim voluptates molestiae officiis amet ab
         </Button>
-
-
         
         <Saludo></Saludo>
         <Saludo firstName='Yaxche' lastName='Manrique'></Saludo>
