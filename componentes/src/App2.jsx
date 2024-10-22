@@ -1,4 +1,6 @@
 import React from "react";
+import EmployeeCard from "./components/EmployeeCard";
+
 
 const data = [
   {
@@ -55,24 +57,13 @@ const cards = [
 function App2() {
   return (
     <main>
-      {names}
+      {/* {names} */}
       {/* {data.map((usuario) => { */}
-      {data.map(({fullName, job, email}) => {
+      {data.map(({ id, fullName, job, email }, index) => {
         // console.log(usuario)
-
         return (
-          <div>
-            <h2>{fullName}</h2>
-            <dl>
-              <dt>job:</dt>
-              <dd>{job}</dd>
-            </dl>
-            <dl>
-              <dt>email:</dt>
-              <dd>{email}</dd>
-            </dl>
-          </div>
-        )
+          <EmployeeCard key={id} fullName={fullName} job={job} email={email}/>
+        );
       })}
     </main>
   );
