@@ -1,17 +1,14 @@
-import React from 'react'
-import ToDo from '../ToDo/ToDo'
+import React from "react";
+import ToDo from "../ToDo/ToDo";
 
-function ToDoContainer() {
+function ToDoContainer({ todos }) {
   return (
     <ul>
-      <ToDo>
-        elemnto 1
-      </ToDo>
-      <ToDo>
-        elemnto 2
-      </ToDo>
+      {todos.map((todo)=> (
+        <ToDo key={todo.id}>{todo.content}</ToDo>
+      ))}
     </ul>
-  )
+  );
 }
 
-export default ToDoContainer
+export default ToDoContainer;

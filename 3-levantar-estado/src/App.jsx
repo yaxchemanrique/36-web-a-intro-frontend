@@ -1,17 +1,19 @@
-import React from 'react'
-import Input from './components/Input/Input.jsx'
-import ToDoContainer from './components/ToDoContainer/ToDoContainer.jsx'
+import { useState } from "react";
+import Input from "./components/Input/Input.jsx";
+import ToDoContainer from "./components/ToDoContainer/ToDoContainer.jsx";
 
 function App() {
+  const [todos, setTodos] = useState([]);
+
   return (
     <div>
-      <Input />
-      <ToDoContainer />
+      <Input todos={todos} setTodos={setTodos} />
+      <ToDoContainer todos={todos}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
 /* const todos = [
   {

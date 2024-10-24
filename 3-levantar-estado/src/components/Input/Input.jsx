@@ -1,18 +1,19 @@
 import { useState } from "react";
 
-function Input() {
+function Input({ todos, setTodos }) {
   const [toDoTentativo, setToDoTentativo] = useState("");
-  const [todos, setTodos] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
     const id = crypto.randomUUID(); //Math.random()
     const newTodo = {
       id, //id: id
-      content: toDoTentativo
-    }
+      content: toDoTentativo,
+    };
     const nextTodos = [...todos, newTodo];
-    setTodos(nextTodos) // setTodos([...todos, newTodo])
+    console.log(nextTodos);
+    setTodos(nextTodos); // setTodos([...todos, newTodo])
+    setToDoTentativo("");
   }
 
   return (
