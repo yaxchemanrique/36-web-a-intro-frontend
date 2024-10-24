@@ -2,7 +2,7 @@ import React from 'react'
 
 function ToDo({children}) {
   return (
-    <li>{children}</li>
+    <li className='todo'>{children}</li>
   )
 }
 

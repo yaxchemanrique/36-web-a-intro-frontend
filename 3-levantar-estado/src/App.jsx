@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "./components/Input/Input.jsx";
 import ToDoContainer from "./components/ToDoContainer/ToDoContainer.jsx";
+import './styles.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
