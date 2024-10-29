@@ -5,12 +5,15 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  // const localStorage = window.localStorage...
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const localStorage = window.localStorage.getItem("is-dark-mode");
     return JSON.parse(localStorage) || false;
   });
 
   // useEffect(función, [arreglo de dependencias])
+  // Sincronizar el HTML (especifico del navegador / fuera del alcance de react) con una variable de estado
+  // Ejecutar algo al momento de carga/montar un componente
   useEffect(() => {
     document.title = `(${count}) - Proyecto Vite`;
   }, [count]);
@@ -46,14 +49,6 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem("is-dark-mode", isDarkMode);
   }, [isDarkMode]);
-
-  // useEffect(() => {
-  //   const isDarkModeLocalStorage = JSON.parse(
-  //     window.localStorage.getItem("is-dark-mode")
-  //   ) || false;
-  //   console.log(isDarkModeLocalStorage);
-  //   setIsDarkMode(isDarkModeLocalStorage);
-  // }, []);
 
   return (
     <>
