@@ -1,0 +1,26 @@
+.todo {
+  --marker-width: 10px;
+  
+  background-color: rgb(238, 208, 238);
+  border: solid white 1px;
+  position: relative;
+  padding-left: var(--marker-width);
+  list-style: none;
+}
+
+.todo::before {
+  content: '';
+  height: 10px;
+  aspect-ratio: 1;
+  background-color: green;
+  position: absolute;
+  left: calc(-1 * var(--marker-width) / 2);
+}
+
+.todo:hover {
+  opacity: 0.5;
+}
+
+.todo.active {
+  background-color: plum;
+}
