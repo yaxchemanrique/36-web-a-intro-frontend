@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import TrackingMouse from "./TrackingMouse";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [isTracking, setIsTracking] = useState(true)
   // const localStorage = window.localStorage...
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const localStorage = window.localStorage.getItem("is-dark-mode");
@@ -70,6 +72,16 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <input
+        type="checkbox"
+        id="mouse-tracking"
+        checked={isTracking}
+        onChange={(e) => setIsTracking(e.target.checked)}
+      />
+      <label htmlFor="mouse-tracking">
+        Track Mouse Position
+      </label>
+      {isTracking && <TrackingMouse />}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
