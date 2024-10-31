@@ -1,5 +1,6 @@
 const BOOKS_DATA = [
   {
+    id: 1,
     title: "Percy Jackson & the Olympians: The Lightning Thief",
     author: "Rick Riordan",
     first_published: "2005",
@@ -11,6 +12,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 2,
     title: "The School for Good and Evil",
     author: "Soman Chainani",
     first_published: "2013",
@@ -22,6 +24,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 3,
     title: "Miss Peregrine's Home for Peculiar Children",
     author: "Ransom Riggs",
     first_published: "2011",
@@ -33,6 +36,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 4,
     title: "Artemis Fowl",
     author: "Eoin Colfer",
     first_published: "2001",
@@ -44,6 +48,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 5,
     title: "The Hobbit",
     author: "J.R.R. Tolkien",
     first_published: "1937",
@@ -55,6 +60,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 6,
     title: "Howl's Moving Castle",
     author: "Diana Wynne Jones",
     first_published: "1986",
@@ -66,6 +72,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 7,
     title: "The Magicians",
     author: "Lev Grossman",
     first_published: "2009",
@@ -77,6 +84,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 8,
     title: "Charlie and the Chocolate Factory",
     author: "Roald Dahl",
     first_published: "1964",
@@ -88,6 +96,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 9,
     title: "The House with Chicken Legs",
     author: "Sophie Anderson",
     first_published: "2018",
@@ -99,6 +108,7 @@ const BOOKS_DATA = [
     },
   },
   {
+    id: 10,
     title: "Nevermoor: The Trials of Morrigan Crow",
     author: "Jessica Townsend",
     first_published: "2017",
