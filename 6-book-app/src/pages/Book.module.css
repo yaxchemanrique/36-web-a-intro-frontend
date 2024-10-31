@@ -1,0 +1,23 @@
+.bookContainer {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.content > * {
+  margin: 0;
+  padding: 0;
+}
+
+.content h1 {
+  margin-bottom: 0.2em;
+}
+
+.content address {
+  margin-bottom: 2rem;
+}
+
+.coverContainer {
+  max-width: 50%;
+}

@@ -1,0 +1,12 @@
+.nav {
+  max-width: 1000px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style: none;
+}

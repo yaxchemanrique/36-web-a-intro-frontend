@@ -1,19 +1,18 @@
-import { Link } from 'react-router-dom'
 import BOOKS_DATA from '../booksData.js'
-import styles from "./BookList.module.css"
-
+import BookListContainer from '../components/BookListContainer.jsx'
 
 function BookList() {
   return (
     <main>
       <h1>Lista de Libros</h1>
-      <div className={styles.bookListContainer}>
+      <BookListContainer bookArr={BOOKS_DATA}/>
+      {/* <div className={styles.}>
         {BOOKS_DATA.map((book)=> (
-          <Link>
+          <Link to={`/books/${book.id}`}>
             <img src={book.cover.imgSrc} alt={book.cover.alt} />
           </Link>
         ))}
-      </div>
+      </div> */}
     </main>
   )
 }
